@@ -3,6 +3,7 @@
     <Project Path="samples/MauiAuth.Sample/MauiAuth.Sample.csproj" />
   </Folder>
   <Folder Name="/src/">
+    <Project Path="src/MauiAuth/MauiAuth.csproj" />
     <Project Path="src/MauiAuth.Core/MauiAuth.Core.csproj" />
     <Project Path="src/MauiAuth.Extensions/MauiAuth.Extensions.csproj" />
     <Project Path="src/MauiAuth.Http/MauiAuth.Http.csproj" />

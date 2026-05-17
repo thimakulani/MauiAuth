@@ -5,13 +5,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageId>MauiAuth.Core</PackageId>
+    <PackageId>Thima.MauiAuth.Core</PackageId>
     <Title>MauiAuth Core</Title>
     <Description>Platform-neutral authentication state abstractions for .NET MAUI and .NET applications.</Description>
-    <Authors>MauiAuth</Authors>
+    <Authors>Thima Sigauque</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/your-org/MauiAuth</RepositoryUrl>
+    <RepositoryUrl>https://github.com/thimakulani/MauiAuth</RepositoryUrl>
     <PackageTags>maui;authentication;claims;jwt;auth-state</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageProjectUrl>https://github.com/thimakulani/MauiAuth</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

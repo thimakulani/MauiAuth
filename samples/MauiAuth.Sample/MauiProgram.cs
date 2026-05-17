@@ -1,7 +1,6 @@
-using MauiAuth.Extensions.Extensions;
+using MauiAuth.Extensions;
 using MauiAuth.Storage.Services;
 using Microsoft.Extensions.Logging;
-using Microsoft.Maui.Storage;
 
 namespace MauiAuth.Sample;
 

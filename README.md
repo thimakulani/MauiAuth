@@ -4,19 +4,29 @@ MauiAuth is a lightweight authentication-state framework for .NET MAUI inspired 
 
 ## Architecture
 
-- `MauiAuth.Core`: platform-neutral state provider, events, token store contracts, options, and authorization helpers.
-- `MauiAuth.Jwt`: JWT parsing and `ClaimsPrincipal` creation.
-- `MauiAuth.Storage`: token store implementations and secure-storage adapter contracts.
-- `MauiAuth.Http`: `DelegatingHandler` for bearer token injection.
-- `MauiAuth.Extensions`: dependency injection setup for app developers.
+The recommended NuGet package is `MauiAuth`, which includes everything in one assembly:
+
+- platform-neutral state provider, events, token store contracts, options, and authorization helpers
+- JWT parsing and `ClaimsPrincipal` creation
+- token store implementations and secure-storage adapter contracts
+- `DelegatingHandler` for bearer token injection
+- dependency injection setup for app developers
+
+The repository also keeps the smaller projects under `src/` for development, but app developers should install the single `MauiAuth` package to avoid missing package references.
 
 `MauiAuth.Core` targets `net8.0` and does not reference MAUI.
 
 ## Basic Usage
 
+Install the dependency injection package:
+
+```powershell
+dotnet add package MauiAuth
+```
+
 ```csharp
 using MauiAuth.Core.Interfaces;
-using MauiAuth.Extensions.Extensions;
+using MauiAuth.Extensions;
 
 builder.Services.AddMauiAuth();
 ```
@@ -53,7 +63,7 @@ if (auth.IsAuthenticated)
 Bind `MauiAuth.Storage` to MAUI SecureStorage from your app project:
 
 ```csharp
-using MauiAuth.Extensions.Extensions;
+using MauiAuth.Extensions;
 using MauiAuth.Storage.Services;
 using Microsoft.Maui.Storage;
 
@@ -106,8 +116,8 @@ dotnet build samples/MauiAuth.Sample/MauiAuth.Sample.csproj -f net9.0-windows10.
 
 ## Packaging
 
-Each project includes NuGet metadata. Before publishing, replace `RepositoryUrl`, add icon/readme metadata, and sign packages if your organization requires it.
+The all-in-one `src/MauiAuth/MauiAuth.csproj` project is the recommended package to publish. Before publishing, add icon/readme metadata and sign packages if your organization requires it.
 
 ```powershell
-dotnet pack -c Release
+dotnet pack src/MauiAuth/MauiAuth.csproj -c Release
 ```

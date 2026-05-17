@@ -7,7 +7,7 @@ using MauiAuth.Storage.Abstractions;
 using MauiAuth.Storage.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MauiAuth.Extensions.Extensions;
+namespace MauiAuth.Extensions;
 
 /// <summary>
 /// Dependency injection helpers for MauiAuth.

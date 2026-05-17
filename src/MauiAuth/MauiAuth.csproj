@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>MauiAuth</AssemblyName>
+    <RootNamespace>MauiAuth</RootNamespace>
+    <PackageId>Thima.MauiAuth.Core</PackageId>
+    <Title>MauiAuth</Title>
+    <Description>All-in-one authentication state, JWT parsing, token storage, HttpClient, and dependency injection helpers for .NET MAUI applications.</Description>
+    <Authors>Thima Sigauque</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/thimakulani/MauiAuth</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/thimakulani/MauiAuth</PackageProjectUrl>
+    <PackageTags>maui;authentication;jwt;claims;auth-state;dependency-injection;secure-storage;httpclient</PackageTags>
+    <Version>1.0.2</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\MauiAuth.Core\**\*.cs" Exclude="..\MauiAuth.Core\bin\**;..\MauiAuth.Core\obj\**" />
+    <Compile Include="..\MauiAuth.Jwt\**\*.cs" Exclude="..\MauiAuth.Jwt\bin\**;..\MauiAuth.Jwt\obj\**" />
+    <Compile Include="..\MauiAuth.Storage\**\*.cs" Exclude="..\MauiAuth.Storage\bin\**;..\MauiAuth.Storage\obj\**" />
+    <Compile Include="..\MauiAuth.Http\**\*.cs" Exclude="..\MauiAuth.Http\bin\**;..\MauiAuth.Http\obj\**" />
+    <Compile Include="..\MauiAuth.Extensions\**\*.cs" Exclude="..\MauiAuth.Extensions\bin\**;..\MauiAuth.Extensions\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

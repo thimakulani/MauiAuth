@@ -73,9 +73,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\MauiAuth.Extensions\MauiAuth.Extensions.csproj" />
-	  <ProjectReference Include="..\..\src\MauiAuth.Core\MauiAuth.Core.csproj" />
-	  <ProjectReference Include="..\..\src\MauiAuth.Storage\MauiAuth.Storage.csproj" />
+	  <ProjectReference Include="..\..\src\MauiAuth\MauiAuth.csproj" />
 	</ItemGroup>
 
 </Project>
