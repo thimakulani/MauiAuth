@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAuth.Sample.MainPage"
+             Title="MauiAuth Sample"
+             BackgroundColor="{AppThemeBinding Light=#F7F8FA, Dark=#101214}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="24,32"
+            Spacing="18">
+
+            <Label
+                Text="MauiAuth"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Authentication state sample"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Border
+                Padding="18"
+                StrokeThickness="1"
+                Stroke="{AppThemeBinding Light=#D8DEE8, Dark=#30363D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#161B22}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="14">
+                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="16">
+                        <Label
+                            Text="Status"
+                            FontAttributes="Bold"
+                            FontSize="16" />
+                        <Label
+                            x:Name="StatusLabel"
+                            Grid.Column="1"
+                            Text="Signed out"
+                            FontAttributes="Bold" />
+                        <Label
+                            x:Name="NameLabel"
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            Margin="0,8,0,0"
+                            Text="No user restored"
+                            LineBreakMode="WordWrap" />
+                    </Grid>
+
+                    <BoxView HeightRequest="1" Color="{AppThemeBinding Light=#E5E7EB, Dark=#30363D}" />
+
+                    <Grid ColumnDefinitions="120,*" RowDefinitions="Auto,Auto,Auto" RowSpacing="8" ColumnSpacing="12">
+                        <Label Text="User id" FontAttributes="Bold" />
+                        <Label x:Name="UserIdLabel" Grid.Column="1" Text="-" LineBreakMode="TailTruncation" />
+
+                        <Label Grid.Row="1" Text="Roles" FontAttributes="Bold" />
+                        <Label x:Name="RolesLabel" Grid.Row="1" Grid.Column="1" Text="-" />
+
+                        <Label Grid.Row="2" Text="Expires" FontAttributes="Bold" />
+                        <Label x:Name="ExpiresLabel" Grid.Row="2" Grid.Column="1" Text="-" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Entry
+                x:Name="TokenEntry"
+                Placeholder="JWT access token"
+                ClearButtonVisibility="WhileEditing"
+                Keyboard="Text" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <Button
+                    Text="Use demo token"
+                    Clicked="OnUseDemoTokenClicked"
+                    HorizontalOptions="Fill" />
+                <Button
+                    Grid.Column="1"
+                    Text="Sign in"
+                    Clicked="OnSignInClicked"
+                    HorizontalOptions="Fill" />
+            </Grid>
+
+            <Button
+                Text="Sign out"
+                Clicked="OnSignOutClicked"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="EventLabel"
+                Text="Waiting for authentication changes"
+                FontSize="13"
+                TextColor="{AppThemeBinding Light=#526071, Dark=#9BA3AF}"
+                LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

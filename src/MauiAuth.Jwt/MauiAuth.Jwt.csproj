@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MauiAuth.Core\MauiAuth.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>MauiAuth.Jwt</PackageId>
+    <Title>MauiAuth JWT</Title>
+    <Description>JWT parsing and ClaimsPrincipal creation for MauiAuth.</Description>
+    <Authors>MauiAuth</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/your-org/MauiAuth</RepositoryUrl>
+    <PackageTags>maui;authentication;jwt;claims</PackageTags>
+  </PropertyGroup>
+
+</Project>

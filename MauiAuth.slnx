@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/MauiAuth.Sample/MauiAuth.Sample.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MauiAuth.Core/MauiAuth.Core.csproj" />
+    <Project Path="src/MauiAuth.Extensions/MauiAuth.Extensions.csproj" />
+    <Project Path="src/MauiAuth.Http/MauiAuth.Http.csproj" />
+    <Project Path="src/MauiAuth.Jwt/MauiAuth.Jwt.csproj" />
+    <Project Path="src/MauiAuth.Storage/MauiAuth.Storage.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MauiAuth.Tests/MauiAuth.Tests.csproj" />
+  </Folder>
+</Solution>

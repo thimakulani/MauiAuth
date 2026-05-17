@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MauiAuth.Core\MauiAuth.Core.csproj" />
+    <ProjectReference Include="..\MauiAuth.Jwt\MauiAuth.Jwt.csproj" />
+    <ProjectReference Include="..\MauiAuth.Storage\MauiAuth.Storage.csproj" />
+    <ProjectReference Include="..\MauiAuth.Http\MauiAuth.Http.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>MauiAuth.Extensions</PackageId>
+    <Title>MauiAuth Extensions</Title>
+    <Description>Dependency injection extensions for adding MauiAuth to .NET MAUI applications.</Description>
+    <Authors>MauiAuth</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/your-org/MauiAuth</RepositoryUrl>
+    <PackageTags>maui;authentication;dependency-injection</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

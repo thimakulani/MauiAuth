@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MauiAuth.Core\MauiAuth.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>MauiAuth.Http</PackageId>
+    <Title>MauiAuth HTTP</Title>
+    <Description>HttpClient bearer token integration for MauiAuth.</Description>
+    <Authors>MauiAuth</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/your-org/MauiAuth</RepositoryUrl>
+    <PackageTags>maui;authentication;httpclient;bearer-token</PackageTags>
+  </PropertyGroup>
+
+</Project>

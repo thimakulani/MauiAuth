@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>MauiAuth.Core</PackageId>
+    <Title>MauiAuth Core</Title>
+    <Description>Platform-neutral authentication state abstractions for .NET MAUI and .NET applications.</Description>
+    <Authors>MauiAuth</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/your-org/MauiAuth</RepositoryUrl>
+    <PackageTags>maui;authentication;claims;jwt;auth-state</PackageTags>
+  </PropertyGroup>
+
+</Project>
